@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<h1>Урок "Формы": теги и их атрибуты.</h1>
+<h2>Расскажите немного о себе...</h2>
+<p>Попробуйте создать аналогичную форму. Для целей домонстрации вполне подойдут и вымышленные.</p>
+
+
+<form name="form" method="post"> 
+	<fieldset>
+		<legend><b>Коротко о себе:</b></legend>
+
+		<label>Имя:<input type = "name" id="name"></label>
+	  	<label>Фамилия: <input type ="name" id="surname"></label>
+
+	<div class="inline_label">
+	  	Пол: <label><input type="radio" name="gender" value="male" checked="checked">мужской</label>
+	  	     <label><input type="radio" name="gender" value="famele">женский</label>
+	</div>
+
+	 	<label>Возраст: <input type="number" id="age" min="1"  max="100"> лет</label>
+  	</fieldset>
+
+
+	<fieldset>
+		<legend><b>Подробнее о себе</b></legend>
+		
+		<div class="interval">
+		<label><input type="radio" name="young" value="boy" checked="checked">Молодой человек</label>
+		<label><input type="radio" name="young" value="girl"> Девушка</label>
+
+		<label><input type="text" id="date"> Дата рождения</label>
+		<label><input type="text" id="family"> Семейное положение</label>
+		<label><input type="text" id="soc_status"> Социальный статус</label>
+		<label><input type="text" id="address"> Местожительство</label>
+
+		<p><b>Что вы обычно делаете на выходных:</b></p>
+
+		<label><input type="checkbox" name="weekend" value="slip">Сплю</label>
+		<label><input type="checkbox" name="weekend" value="walking">Гуляю с друзьями</label>
+		<label><input type="checkbox" name="weekend" value="fishing">Хожу на рыбалку</label>
+		<label><input type="checkbox" name="weekend" value="games">Играю в игры</label>
+		
+		
+		<p><b>Рассказать о формах в книге, посвященной HTML:</b></p>
+
+		<select name="site_frequency" size="1">
+		<option value="first">Site frequency:</option>
+		</select>
+
+		<p><b>Сколько книг вы прочитали за свою жизнь:</b></p>
+
+		<label><input type="radio" name="books" value="zero_ten"> 0-10</label>
+		<label><input type="radio" name="books" value="eleven_twenty"> 11-20</label>
+		<label><input type="radio" name="books" value="twentyone_fifty"> 21-50</label>
+		<label><input type="radio" name="books" value="fifty_more"> 50+</label>
+		
+
+		<label><p><b>Ваши комментарии:</b></p>
+		<textarea name="comments" id="comments" col="50" rows="9"></textarea></label>
+		</div>
+
+		<label><select name="positions" size="3">
+		<option value="first_pos">Первая позиция</option>
+		<option value="second_pos" selected="selected">Вторая позиция</option>
+		<option value="third_pos">Третья позиция</option>
+		</select></label>
+
+	</fieldset>
+</div>
+
+
+<fieldset>
+
+	<legend><b>И в заключении</b></legend>
+
+	<input type="text" id="placeholder_text" placeholder="Это поле было введено до вас" size="30"><br>
+
+	<label><b>Email:</b><br/>
+	<input type="email" id="email" size="30"></label>
+	
+	<p><b>Хотите подписаться на самую модную рассылку спама?</b><br/>
+	<i>Выберите категории</i></p>
+
+	<div class="interval">
+	<label><input type="checkbox" name="spams" value="equipment"> Оборудование</label>
+	<label><input type="checkbox" name="spams" value="cooking"> Как приготовить обеды</label>
+	<label><input type="checkbox" name="spams" value="million"> Заработай миллион за два дня !</label>
+	
+
+	<p><b>На сколько сложная задача:</b></p>
+
+		<label><input type="radio" name="task_level" value="task_easy" checked="checked"> Совсем нет</label>
+		<label><input type="radio" name="task_level" value="task_normal"> Так себе</label>
+		<label><input type="radio" name="task_level" value="task_hard"> Еле справилась</label>
+	
+</div>
+</fieldset>
+
+<input type="submit" value="Отправить" class="submit">
+</form>
+
+</body>
+</html>

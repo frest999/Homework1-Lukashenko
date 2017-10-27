@@ -1,0 +1,29 @@
+
+body{
+
+width:800px;
+margin:0 auto;
+}
+
+fieldset{
+margin-bottom: 20px;	
+}
+
+#comments{
+	width:400px;
+}
+label{
+display:block;
+margin:15px 0;
+}
+
+.interval label{
+	margin:0;
+}
+.inline_label label{
+display: inline;
+}
+
+.submit{
+margin-bottom:10px;
+}
